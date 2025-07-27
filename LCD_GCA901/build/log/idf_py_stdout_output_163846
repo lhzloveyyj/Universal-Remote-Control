@@ -1,0 +1,25 @@
+Command: ninja all
+[1/9] Performing build step for 'bootloader'
+[1/1] cd /home/lhz/esp/esp32-S3/LCD/build/bootloader/esp-idf/esptool_py && /home/lhz/.espressif/python_env/idf6.0_py3.12_env/bin/python /home/lhz/esp/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x0 /home/lhz/esp/esp32-S3/LCD/build/bootloader/bootloader.bin
+Bootloader binary size 0x5260 bytes. 0x2da0 bytes (36%) free.
+[2/7] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/main.c.obj
+In file included from /home/lhz/esp/esp32-S3/LCD/managed_components/espressif__esp_lcd_gc9a01/include/esp_lcd_gc9a01.h:13,
+                 from /home/lhz/esp/esp32-S3/LCD/main/main.c:16:
+/home/lhz/esp/esp-idf/components/esp_hw_support/include/intr_types.h:8:2: warning: #warning "This header is deprecated. Please use esp_intr_types.h instead" [-Wcpp]
+    8 | #warning "This header is deprecated. Please use esp_intr_types.h instead"
+      |  ^~~~~~~
+/home/lhz/esp/esp32-S3/LCD/main/main.c: In function 'app_main':
+/home/lhz/esp/esp32-S3/LCD/main/main.c:210:20: warning: unused variable 'disp' [-Wunused-variable]
+  210 |         lv_disp_t *disp = lv_disp_drv_register(&disp_drv); // Register the display driver
+      |                    ^~~~
+[3/7] Linking C static library esp-idf/main/libmain.a
+[4/7] Generating esp-idf/esp_system/ld/sections.ld
+[5/7] Linking CXX executable LCD.elf
+[6/7] Generating binary image from built executable
+esptool.py v4.9.dev8
+Creating esp32s3 image...
+Merged 2 ELF sections
+Successfully created esp32s3 image.
+Generated /home/lhz/esp/esp32-S3/LCD/build/LCD.bin
+[7/7] cd /home/lhz/esp/esp32-S3/LCD/build/esp-idf/esptool_py && /home/lhz/.espressif/python_env/idf6.0_py3.12_env/bin/python /home/lhz/esp/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 partition --type app /home/lhz/esp/esp32-S3/LCD/build/partition_table/partition-table.bin /home/lhz/esp/esp32-S3/LCD/build/LCD.bin
+LCD.bin binary size 0x5e550 bytes. Smallest app partition is 0x100000 bytes. 0xa1ab0 bytes (63%) free.

@@ -1,0 +1,2 @@
+source /home/lhz/esp/esp32-S3/LCD/build/bootloader/gdbinit/symbols
+source /home/lhz/esp/esp32-S3/LCD/build/bootloader/gdbinit/connect
